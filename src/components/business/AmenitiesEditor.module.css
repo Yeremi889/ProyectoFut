@@ -1,0 +1,89 @@
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.legend {
+  margin-bottom: var(--space-3);
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: var(--space-3);
+}
+
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 64px;
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color var(--duration) var(--ease);
+}
+
+.option:hover {
+  border-color: var(--color-turf);
+}
+
+.checked {
+  border-color: var(--color-turf);
+  background: var(--color-turf-soft);
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.option:focus-within {
+  outline: 3px solid var(--color-floodlight);
+  outline-offset: 2px;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--color-bg);
+  color: var(--color-turf);
+  border-radius: var(--radius-sm);
+}
+
+.checked .icon {
+  background: var(--color-surface);
+}
+
+.name {
+  flex: 1;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.box {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--color-line);
+  border-radius: 5px;
+  background: var(--color-surface);
+}
+
+.checked .box {
+  background: var(--color-turf);
+  border-color: var(--color-turf);
+  color: var(--color-chalk);
+}

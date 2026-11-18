@@ -1,0 +1,52 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+}
+
+.stars {
+  display: inline-flex;
+  gap: 1px;
+}
+
+.on {
+  fill: var(--color-floodlight);
+  color: var(--color-floodlight);
+}
+
+.off {
+  fill: none;
+  color: var(--color-line);
+}
+
+.value {
+  font-weight: 700;
+}
+
+.count,
+.empty {
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+}
+
+.input {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.inputStar {
+  display: grid;
+  place-items: center;
+  width: var(--tap-target);
+  height: var(--tap-target);
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.inputStar:hover .off {
+  color: var(--color-floodlight);
+}

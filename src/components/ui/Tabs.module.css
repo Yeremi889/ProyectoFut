@@ -1,0 +1,29 @@
+.tabs {
+  display: flex;
+  gap: var(--space-1);
+  overflow-x: auto;
+  border-bottom: 1.5px solid var(--color-line);
+  scrollbar-width: none;
+}
+
+.tab {
+  flex-shrink: 0;
+  min-height: var(--tap-target);
+  padding: 0 var(--space-4);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1.5px;
+  font-weight: 600;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--color-ink);
+}
+
+.active {
+  color: var(--color-turf-strong);
+  border-bottom-color: var(--color-turf);
+}

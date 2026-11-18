@@ -1,0 +1,4 @@
+/* La vista previa no es navegable (inert): solo muestra cómo se verá la tarjeta. */
+.preview {
+  max-width: 360px;
+}

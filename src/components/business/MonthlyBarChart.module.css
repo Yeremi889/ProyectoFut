@@ -1,0 +1,51 @@
+.figure {
+  margin: 0;
+}
+
+.title {
+  margin-bottom: var(--space-2);
+  font-weight: 700;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.axis {
+  stroke: var(--color-line);
+  stroke-width: 1;
+}
+
+.group {
+  outline: none;
+}
+
+.bar {
+  fill: var(--color-turf);
+  opacity: 0.45;
+  transition: opacity var(--duration) var(--ease);
+}
+
+.group:hover .bar,
+.group:focus-visible .bar {
+  opacity: 0.8;
+}
+
+.barCurrent {
+  fill: var(--color-turf);
+}
+
+.value {
+  fill: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.label {
+  fill: var(--color-ink-muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+}

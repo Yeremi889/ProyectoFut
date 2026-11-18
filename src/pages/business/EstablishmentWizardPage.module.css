@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 880px;
+}
+
+.exit {
+  align-self: flex-start;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.description {
+  margin-bottom: var(--space-5);
+  color: var(--color-ink-muted);
+}

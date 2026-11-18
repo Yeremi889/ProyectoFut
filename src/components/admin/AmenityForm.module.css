@@ -1,0 +1,38 @@
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.legend {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  gap: var(--space-2);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  height: 48px;
+  border: 1.5px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  color: var(--color-turf);
+  cursor: pointer;
+}
+
+.icon:focus-within {
+  outline: 3px solid var(--color-floodlight);
+  outline-offset: 2px;
+}
+
+.selected {
+  background: var(--color-turf);
+  border-color: var(--color-turf);
+  color: var(--color-chalk);
+}

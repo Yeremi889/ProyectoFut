@@ -1,0 +1,32 @@
+/* Celular: barra fija abajo para tener el contacto siempre a mano (SOP sección 6). */
+.bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4) calc(var(--space-3) + env(safe-area-inset-bottom));
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-line);
+  box-shadow: var(--shadow-float);
+}
+
+.maps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+/* Computadora: bloque normal dentro de la columna lateral. */
+@media (min-width: 900px) {
+  .bar {
+    position: static;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+}

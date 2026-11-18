@@ -1,0 +1,4 @@
+.filled {
+  fill: var(--color-danger);
+  color: var(--color-danger);
+}

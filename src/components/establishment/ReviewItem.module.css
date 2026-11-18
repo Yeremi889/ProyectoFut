@@ -1,0 +1,56 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.author {
+  font-weight: 700;
+}
+
+.date {
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+}
+
+.comment {
+  max-width: 70ch;
+}
+
+.reply {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg);
+  border-left: 3px solid var(--color-turf);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: var(--text-sm);
+}
+
+.replyLabel {
+  font-weight: 700;
+  color: var(--color-turf-strong);
+}
+
+.report {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) 0;
+  background: none;
+  border: none;
+  color: var(--color-ink-muted);
+  font-size: var(--text-xs);
+  cursor: pointer;
+}
+
+.report:hover {
+  color: var(--color-danger);
+}

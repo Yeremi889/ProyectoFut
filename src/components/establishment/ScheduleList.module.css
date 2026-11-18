@@ -1,0 +1,25 @@
+.list {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.row dd {
+  margin: 0;
+  color: var(--color-ink-muted);
+}
+
+.today {
+  background: var(--color-turf-soft);
+  font-weight: 700;
+}
+
+.today dd {
+  color: var(--color-turf-strong);
+}

@@ -1,0 +1,30 @@
+/* Distribución común de formularios: campos apilados y fila de acciones. */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.row {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.link {
+  align-self: flex-end;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}

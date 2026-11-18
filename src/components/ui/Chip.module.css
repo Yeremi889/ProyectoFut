@@ -1,0 +1,28 @@
+.chip {
+  display: inline-flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 40px;
+  padding: 0 var(--space-4);
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition:
+    background-color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease);
+}
+
+.chip:hover {
+  border-color: var(--color-turf);
+}
+
+.selected {
+  background: var(--color-turf);
+  border-color: var(--color-turf);
+  color: var(--color-chalk);
+}
